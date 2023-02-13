@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const links = [
     { href: "/", name: "Home" },
     { href: "/about", name: "About" },
-    { href: "/products", name: "Products" },
+    { href: "/blog", name: "Blog" },
   ];
   const router = useRouter();
 

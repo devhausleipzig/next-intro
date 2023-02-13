@@ -2,15 +2,18 @@ import { GetStaticProps } from "next";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
+import { spawn } from "child_process";
+
+export type FrontMatter = {
+  title: string;
+  author: string;
+  date: string;
+  tags: string[];
+};
 
 type Post = {
   slug: string;
-  frontMatter: {
-    title: string;
-    author: string;
-    date: string;
-    tag: string[];
-  };
+  frontMatter: FrontMatter;
 };
 
 interface Props {
@@ -39,6 +42,16 @@ export default function Blog({ posts }: Props) {
             <h2 className="text-xl font-bold">{frontMatter.title}</h2>
             <p className="text-xs">{frontMatter.date}</p>
             <p className="font-semibold">{frontMatter.author}</p>
+            <div className="flex gap-2">
+              {frontMatter.tags.map((tag) => (
+                <span
+                  className="bg-slate-400 rounded-full px-2 text-xs py-1"
+                  key={tag}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </Link>
         ))}
     </div>
@@ -56,7 +69,6 @@ export const getStaticProps: GetStaticProps = async () => {
       frontMatter,
     };
   });
-  console.log(posts);
 
   return {
     props: {

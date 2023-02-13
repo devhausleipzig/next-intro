@@ -2,7 +2,7 @@
 title: "Advanced Figma"
 author: "Elli Haubert"
 date: "2023-02-14"
-tag: ["design", "figma"]
+tags: ["design", "figma"]
 ---
 
 # Advanced Figma

@@ -2,10 +2,14 @@
 title: "Introduction to NextJS"
 author: "Dan McAtee"
 date: "2023-02-13"
-tag: ["next", "typescript"]
+tags: ["next", "typescript"]
 ---
 
 # Introduction to NextJS
+
+- Server Side Rendering
+- Static generation
+- API Routes
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in ex pulvinar, pretium nibh sit amet, aliquet lorem. Phasellus finibus ex tristique, blandit nisl id, cursus erat. Vestibulum vitae nisl interdum, venenatis nisl quis, euismod lectus. Nulla quis lectus enim. Integer ac scelerisque diam. Aliquam id lorem in dolor bibendum accumsan sit amet vel neque. Fusce ac convallis urna, non finibus ante. Donec euismod mauris eu cursus porta. Nam tristique eu leo quis tincidunt. Vivamus feugiat at tortor ut convallis. Donec eget magna lorem. Praesent id tortor quam. Vivamus ullamcorper sem ac quam venenatis efficitur. Ut facilisis faucibus lectus, venenatis consectetur quam rhoncus non. Vivamus nec rutrum risus, in tristique sapien.
 

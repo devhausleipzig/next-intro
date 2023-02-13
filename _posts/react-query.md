@@ -2,7 +2,7 @@
 title: "What is React Query"
 author: "Dan McAtee"
 date: "2023-02-14"
-tag: ["data", "fetching", "typescript"]
+tags: ["data", "fetching", "typescript"]
 ---
 
 # What is React Query
